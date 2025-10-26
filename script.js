@@ -11,7 +11,7 @@ const installBtn = document.getElementById('installBtn');
 let score = 0, streak = 0;
 
 
-function randDigit(){ return Math.floor(Math.random()*8); }
+function randDigit(){ return Math.floor((Math.random()*8)+2); }
 function newQuestion(){ a = randDigit(); b = randDigit(); questionEl.textContent = `${a} × ${b} = ?`; feedback.textContent = ''; answerInput.value = ''; answerInput.focus(); nextBtn.classList.add('hidden'); }
 
 
