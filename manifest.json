@@ -1,0 +1,13 @@
+{
+"name": "Multi-me",
+"short_name": "Multi-me",
+"start_url": "/",
+"display": "standalone",
+"background_color": "#5a2d8f",
+"theme_color": "#5a2d8f",
+"description": "Entraîne-toi aux multiplications — application simple et rapide.",
+"icons": [
+{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+{ "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+]
+}

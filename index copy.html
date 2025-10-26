@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<title>Multiplications — Entraîne-toi</title>
+<link rel="manifest" href="/manifest.json" />
+<link rel="stylesheet" href="/style.css" />
+<meta name="theme-color" content="#5a2d8f" />
+</head>
+<body>
+<main class="app">
+<header>
+<h1>Multiplications</h1>
+</header>
+
+<section class="card">
+<div class="question" id="question">— × — = ?</div>
+
+
+<form id="answerForm" class="answer-form" autocomplete="off">
+<label for="answer" class="visually-hidden">Réponse</label>
+<input id="answer" name="answer" inputmode="numeric" pattern="[0-9]*" autocomplete="off" placeholder="Tape ta réponse" />
+<button type="submit">Valider</button>
+</form>
+
+
+<div id="feedback" class="feedback" aria-live="polite"></div>
+
+
+<button id="nextBtn" class="next hidden">Question suivante 2</button>
+</section>
+</main>
+
+
+<script src="/script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('/sw.js')
+.then(reg => console.log('SW enregistré', reg.scope))
+.catch(err => console.warn('SW erreur', err));
+}
+</script>
+</body>
+</html>
